@@ -202,3 +202,13 @@
 - Configured remote origin: `https://github.com/lunacoderl/mg-planners.git`.
 - Successfully pushed branch to remote: `git push -u origin main`.
 - **Status**: Live and synced on GitHub repository `lunacoderl/mg-planners`.
+
+### Session: Centered Hero Layout with Glassmorphism Text Card (2026-10-29)
+
+#### 1. Hero Centering & Glassmorphism Treatment
+- In `src/components/home/Hero.jsx`:
+  - Moved hero content to exact vertical and horizontal center (`flex items-center justify-center text-center`).
+  - Added a frosted glassmorphism container (`bg-black/50 backdrop-blur-md rounded-3xl sm:rounded-[32px] p-6 sm:p-10 md:p-12 border border-white/25 shadow-2xl max-w-xl md:max-w-3xl mx-auto`).
+  - Wrapped text, headline, CTAs, and verified credentials inside the glassy container.
+  - Leaves the surrounding architectural sunset background image (`public/hero-mobile.jpg`) fully visible (sky, sunset, skyline, building columns, terrace greenery) without being entirely covered.
+  - Text is 100% legible across all device sizes with crisp contrast.

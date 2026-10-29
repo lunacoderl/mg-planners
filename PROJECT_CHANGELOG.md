@@ -67,3 +67,10 @@ All notable changes to the MG Planners website project are documented in this fi
   - Committed 100 project files with all source code, assets, and documentation.
   - Established `main` branch.
   - Linked and pushed to `https://github.com/lunacoderl/mg-planners.git`.
+
+## [1.3.0] - 2026-10-29
+
+### Added
+- **Centered Hero with Glassmorphism Card**:
+  - Centered hero layout vertically and horizontally.
+  - Encapsulated text and actions inside a frosted glass card (`bg-black/50 backdrop-blur-md`) preserving the full visibility of the architectural sunset background without covering it entirely.
