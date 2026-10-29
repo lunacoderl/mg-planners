@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cobalt: #174B91;
+  --color-cobalt-hover: #123c75;
+  --color-cobalt-subtle: #edf3fa;
+
+  --color-terracotta: #E66B43;
+  --color-terracotta-hover: #cf5630;
+  --color-terracotta-subtle: #fcf1ed;
+
+  --color-warm-yellow: #F2C94C;
+  --color-warm-yellow-hover: #dcaf31;
+
+  --color-ivory: #F7F5EF;
+  --color-ivory-pure: #FFFFFF;
+  --color-ivory-card: #FFFFFF;
+  --color-ivory-border: #E5E1D6;
+  --color-ivory-muted: #EEEADF;
+
+  --color-charcoal: #202B39;
+  --color-charcoal-dark: #141B24;
+  --color-charcoal-muted: #4B5868;
+
+  --color-sage: #E9F3ED;
+  --color-sage-border: #C8DFD1;
+
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    color: var(--color-charcoal);
+    background-color: var(--color-ivory);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom architectural utilities */
+.editorial-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.5rem;
+}
+
+/* Architectural subtle border */
+.arch-border {
+  border-color: #E2DDD2;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F5EF;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4BFB4;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #174B91;
+}
+
+/* Focus outline for accessibility */
+*:focus-visible {
+  outline: 2px solid #174B91;
+  outline-offset: 3px;
+}
