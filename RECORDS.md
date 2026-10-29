@@ -176,3 +176,29 @@
 
 #### 5. Build & Quality Verification
 - Ran production build via Vite: 100% clean bundle, zero errors, zero missing assets.
+
+### Session: Vercel Deployment Config, Git Initialization & GitHub Push (2026-10-29)
+
+#### 1. Configuration & Deployment Files Added
+- Created `vercel.json` with SPA route rewrites:
+  ```json
+  {
+    "rewrites": [
+      {
+        "source": "/(.*)",
+        "destination": "/index.html"
+      }
+    ]
+  }
+  ```
+- Created / normalized `.gitignore` to prevent tracking of `node_modules/`, `dist/`, `.env*` files, and IDE artifacts.
+- Created `README.md` with `# mg-planners`, comprehensive architectural studio summary, palette tokens, asset index, routing structure, and deployment instructions.
+
+#### 2. Git Version Control & GitHub Repository Push
+- Initialized local Git repository (`git init`).
+- Staged all 100 project files including all source code, assets (`public/projects/`, `public/working/`, `public/mementos/`, `public/logo.png`), configuration files, and documentation (`git add .`).
+- Committed initial release: `git commit -m "first commit: MG Planners architectural studio website"`.
+- Set branch name to `main` (`git branch -M main`).
+- Configured remote origin: `https://github.com/lunacoderl/mg-planners.git`.
+- Successfully pushed branch to remote: `git push -u origin main`.
+- **Status**: Live and synced on GitHub repository `lunacoderl/mg-planners`.

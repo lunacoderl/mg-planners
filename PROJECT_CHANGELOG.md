@@ -55,3 +55,15 @@ All notable changes to the MG Planners website project are documented in this fi
   - 7 verified award plaques from `public/mementos/` mapped into `awardsData`.
 - **Dual-Mode Interactive Gallery & Portfolio**:
   - Added tab switcher on the homepage gallery and projects page to toggle between Completed Works and On-Site Construction stages.
+
+## [1.2.0] - 2026-10-29
+
+### Added
+- **`vercel.json`**: SPA routing rewrites for frictionless client-side navigation on Vercel.
+- **`.gitignore`**: Normalized rules ignoring dependencies, build artifacts, and environment files.
+- **`README.md`**: Official documentation with studio background, design tokens, asset catalog, and deployment guide.
+- **Git & GitHub Integration**:
+  - Initialized Git repository.
+  - Committed 100 project files with all source code, assets, and documentation.
+  - Established `main` branch.
+  - Linked and pushed to `https://github.com/lunacoderl/mg-planners.git`.
